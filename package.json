@@ -1,0 +1,27 @@
+{
+  "name": "githubapi",
+  "version": "1.0.0",
+  "description": "'New' interface for some github modules",
+  "main": "karma.conf.js",
+  "dependencies": {
+    "angular": "^1.4.1",
+    "angular-route": "^1.4.1",
+    "bootstrap": "^3.3.5"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.4.1",
+    "karma": "^0.12.37",
+    "karma-angular": "0.0.6",
+    "karma-jasmine": "^0.3.5",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "mocha": "^2.2.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "github"
+  ],
+  "author": "joaohencke",
+  "license": "ISC"
+}

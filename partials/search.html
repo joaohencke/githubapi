@@ -1,0 +1,23 @@
+<div class='container'>
+	<div class='page-header'>
+		<h3>Resultados</h3>
+	</div>
+	<div class='jumbotron' role='main'>
+		<div class='table-responsive'>
+			<table class='table'>
+				<thead>
+				<tr>
+					<th>Nome</th>
+					<th>Autor</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr ng-repeat='item in searchResult.items'>
+					<td><a href='#/repository/{{item.owner.login}}/{{item.name}}'> {{item.name}} </td>
+					<td>{{item.owner.login}}</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,23 @@
+<nav class='navbar navbar-default' role='navigation'>
+	<div class='container'>	
+		<div class='navbar-header'>
+			<button class='navbar-toggle' type='button' data-toggle='collapse' data-target='#menu-itens'> 
+			<span class='text-muted'>Navegar</span> 
+			</button> 
+			<a class='navbar-brand' href='#' ng-click='setMenu("")'><strong>API GitHub</strong></a>
+		</div>
+		<div class='collapse navbar-collapse' id='menu-itens'>
+			<form class='navbar-form navbar-left' role='search' name='searchForm' novalidate>
+				<div class='form-group'>
+					<input class='form-control' type='text' placeholder='Pesquisar Repositório' ng-model='criteria'  ng-minlength='3' required/>
+				</div>
+				<a class='btn btn-default' href='#/searchResult/{{criteria}}' ng-disabled='searchForm.$invalid'>Pesquisar</a>
+			</form>
+			<ul class='nav navbar-nav'>
+				<li ng-repeat='option in menuOptions' ng-class="{active:isActive(option)}">
+					<a href="#/{{option.page}}" ng-click="setMenu(option.page)">{{option.name}}</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>

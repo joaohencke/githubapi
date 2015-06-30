@@ -1,0 +1,20 @@
+<div class='container'>
+	<div class='page-header'>
+		<h3>Favoritos</h3>
+	</div>
+	
+	<div class='jumbotron' role='main'>
+		<div class='table-responsive'>
+			<table class='table'>
+				<tr>
+					<th>Nome</th>
+					<th>Autor</th>
+				</tr>
+				<tr ng-repeat='repository in bookmark'>
+					<td><a href='#/repository/{{repository.owner.login}}/{{repository.name}}'>{{repository.name}}</a></td>
+					<td>{{repository.owner.login}}</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>

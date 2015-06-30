@@ -1,0 +1,32 @@
+<html ng-app='gitHubApi'>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<!-- Angular/Bootstrap/JQuery -->
+	<script type='text/javascript' src='node_modules/angular/angular.min.js'></script>
+	<script type='text/javascript' src='node_modules/angular-route/angular-route.min.js'></script>
+	<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type='text/javascript' src='node_modules/bootstrap/dist/js/bootstrap.min.js'></script>
+	
+	<link rel='stylesheet' href='node_modules/bootstrap/dist/css/bootstrap.min.css' />
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+	<link rel='stylesheet' href='css/app.css' />
+	
+	<script type='text/javascript' src='js/module.js'></script>
+	<script type='text/javascript' src='js/api.js'></script>
+	<script type='text/javascript' src='js/route.js'></script>
+	<!-- Controllers -->
+	<script type='text/javascript' src='js/mainController.js'></script>
+	<script type='text/javascript' src='js/menuController.js'></script>
+	<script type='text/javascript' src='js/homeController.js'></script>
+	<script type='text/javascript' src='js/bookmarkController.js'></script>
+	<script type='text/javascript' src='js/repositoryController.js'></script>
+	<script type='text/javascript' src='js/searchController.js'></script>
+</head>
+<body>
+	<div ng-controller='mainController'>	
+		<div ng-include="'partials/menu.html'" ng-controller='menuController'></div>
+		<div ng-view></div>
+	</div>
+</body>
+</html>
